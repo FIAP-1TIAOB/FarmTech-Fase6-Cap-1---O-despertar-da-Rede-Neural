@@ -48,11 +48,11 @@ Perdas (box, obj e cls) e métricas (precisão, recall e mAP) ao longo das époc
 
 **30 épocas**
 
-<img src="assets/results_30ep.png" width="80%">
+<img src="assets/results_30ep.png.png" width="80%">
 
 **60 épocas**
 
-<img src="assets/results_60ep.png" width="80%">
+<img src="assets/results_60ep.png.png" width="80%">
 
 ### 📊 Resultados no conjunto de teste
 
