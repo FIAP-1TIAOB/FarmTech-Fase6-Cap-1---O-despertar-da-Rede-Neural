@@ -23,7 +23,7 @@
 - <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
 
 
-## 📜 Descrição
+## 📜 Visão Geral
 
 *Descreva seu projeto com base no texto do PBL (até 600 palavras)*
 
