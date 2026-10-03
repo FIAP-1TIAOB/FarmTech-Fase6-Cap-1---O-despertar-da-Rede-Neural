@@ -18,9 +18,9 @@
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Sabrina Otoni</a>
+- Sabrina Otoni
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
+- André Godoi Chiovato
 
 
 ## 📜 Visão Geral
