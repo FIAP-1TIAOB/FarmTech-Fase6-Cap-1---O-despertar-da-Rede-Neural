@@ -11,10 +11,10 @@
 ## Turma: FIAP-1TIAOB
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Samyr de Souza Pereira</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Antonio Filipe de Souza Branco</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Albert Oliveira Ribeiro</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Vinicius Seiti Adati</a> 
+- Samyr de Souza Pereira
+- Antonio Filipe de Souza Branco
+- Albert Oliveira Ribeiro
+- Vinicius Seiti Adati
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
@@ -41,6 +41,18 @@ O passo a passo, o código comentado, os resultados e as conclusões completas e
 ### 🧠 Metodologia
 
 Partimos do modelo pré-treinado `yolov5s` (transfer learning) e o treinamos com as nossas imagens no Google Colab, com GPU Tesla T4. Foram feitas duas simulações, com **30** e **60 épocas**, e cada uma foi avaliada na validação e em imagens de teste nunca vistas pelo modelo.
+
+### 📈 Curvas de treino
+
+Perdas (box, obj e cls) e métricas (precisão, recall e mAP) ao longo das épocas, medidas na validação.
+
+**30 épocas**
+
+<img src="assets/results_30ep.png" width="80%">
+
+**60 épocas**
+
+<img src="assets/results_60ep.png" width="80%">
 
 ### 📊 Resultados no conjunto de teste
 
