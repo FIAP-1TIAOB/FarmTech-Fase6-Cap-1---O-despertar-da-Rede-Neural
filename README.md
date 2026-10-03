@@ -8,20 +8,19 @@
 
 # Nome do projeto
 
-## Nome do grupo
+## Turma: FIAP-1TIAOB
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Samyr de Souza Pereira</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Antonio Filipe de Souza Branco</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Albert Oliveira Ribeiro</a> 
+- <a href="https://www.linkedin.com/company/inova-fusca">Vinicius Seiti Adati</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Sabrina Otoni</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
 
 
 ## 📜 Descrição
