@@ -27,7 +27,7 @@
 
 Projeto da **Fase 6 (O começo da rede neural)**. A FarmTech Solutions está expandindo seus serviços de IA para além do agronegócio e quer mostrar a um cliente como funciona, na prática, um sistema de visão computacional. Para isso, treinamos o **YOLOv5** para detectar dois objetos bem diferentes, **vaca** e **bicicleta**, e comparamos duas simulações de treino.
 
-- 👉 **Notebook completo (Google Colab):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/brancofelipe641-jpg/FarmTech-Fase6-Cap-1---O-despertar-da-Rede-Neural/blob/main/src/AntonioFilipeDeSouzaBranco_rm573837_pbl_fase6.ipynb)
+- 👉 **Notebook completo (Google Colab):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FIAP-1TIAOB/FarmTech-Fase6-Cap-1---O-despertar-da-Rede-Neural/blob/main/src/AntonioFilipeDeSouzaBranco_rm573837_pbl_fase6.ipynb)
 - 🗂️ **Dataset e resultados no Drive:** https://drive.google.com/drive/folders/1gz_ejuuDiEIgJNe1DnIa7cBvoya6AeVr?usp=drive_link
   
 O passo a passo, o código comentado, os resultados e as conclusões completas estão no notebook.
