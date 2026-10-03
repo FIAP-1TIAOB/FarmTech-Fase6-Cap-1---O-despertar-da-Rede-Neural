@@ -23,7 +23,7 @@
 - André Godoi Chiovato
 
 
-## 📜 Visão Geral
+## 📜 Descrição
 
 Projeto da **Fase 6 (O começo da rede neural)**. A FarmTech Solutions está expandindo seus serviços de IA para além do agronegócio e quer mostrar a um cliente como funciona, na prática, um sistema de visão computacional. Para isso, treinamos o **YOLOv5** para detectar dois objetos bem diferentes, **vaca** e **bicicleta**, e comparamos duas simulações de treino.
 
