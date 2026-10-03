@@ -6,7 +6,7 @@
 
 <br>
 
-# Nome do projeto
+# 🧠 FarmTech Solutions: O despertar da Rede Neural
 
 ## Turma: FIAP-1TIAOB
 
