@@ -1,7 +1,7 @@
 # FIAP - Faculdade de Informática e Administração Paulista
    
 <p align="center">
-<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+<a href="https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" border="0" width="40%" height="40%"></a>
 </p>
 
 <br>
@@ -10,116 +10,214 @@
 
 ## Turma: FIAP-1TIAOB
 
-## 👨‍🎓 Integrantes: 
+## 👨‍🎓 Integrantes
 - Samyr de Souza Pereira
 - Antonio Filipe de Souza Branco
 - Albert Oliveira Ribeiro
 - Vinicius Seiti Adati
 
-## 👩‍🏫 Professores:
-### Tutor(a) 
+## 👩‍🏫 Professores
+
+### Tutor(a)
 - Sabrina Otoni
+
 ### Coordenador(a)
 - André Godoi Chiovato
 
-
 ## 📜 Descrição
 
-Projeto da **Fase 6 (O começo da rede neural)**. A FarmTech Solutions está expandindo seus serviços de IA para além do agronegócio e quer mostrar a um cliente como funciona, na prática, um sistema de visão computacional. Para isso, treinamos o **YOLOv5** para detectar dois objetos bem diferentes, **vaca** e **bicicleta**, e comparamos duas simulações de treino.
+Projeto da **Fase 6 — O começo da rede neural**, desenvolvido para demonstrar aplicações práticas de Visão Computacional.
 
-- 👉 **Notebook completo (Google Colab):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FIAP-1TIAOB/FarmTech-Fase6-Cap-1---O-despertar-da-Rede-Neural/blob/main/src/AntonioFilipeDeSouzaBranco_rm573837_pbl_fase6.ipynb)
-- 🗂️ **Dataset e resultados no Drive:** https://drive.google.com/drive/folders/1gz_ejuuDiEIgJNe1DnIa7cBvoya6AeVr?usp=drive_link
-  
-O passo a passo, o código comentado, os resultados e as conclusões completas estão no notebook.
+O projeto utiliza um dataset com imagens de **vacas** e **bicicletas** e foi dividido em duas etapas principais:
+
+- **Entrega 1:** treinamento e avaliação de um modelo YOLOv5 customizado, comparando simulações com 30 e 60 épocas;
+- **Entrega 2:** comparação da YOLO customizada com uma **YOLO padrão pré-treinada** e uma **CNN desenvolvida e treinada do zero** para classificação das imagens.
+
+👉 **Notebook completo (Google Colab):**  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FIAP-1TIAOB/FarmTech-Fase6-Cap-1---O-despertar-da-Rede-Neural/blob/main/src/AntonioFilipeDeSouzaBranco_rm573837_pbl_fase6.ipynb)
+
+🗂️ **Dataset e arquivos no Google Drive:**  
+https://drive.google.com/drive/folders/1gz_ejuuDiEIgJNe1DnIa7cBvoya6AeVr?usp=drive_link
+
+O passo a passo da implementação, códigos comentados, saídas, avaliações e conclusões completas estão disponíveis no notebook.
 
 ### 🖼️ Dataset
 
-- 80 imagens (40 de vacas e 40 de bicicletas), usadas exclusivamente para fins acadêmicos (fontes: magnific.com e pinterest.com).
-- Divisão por classe: 32 imagens para treino, 4 para validação e 4 para teste (64, 8 e 8 no total).
-- Rotulação feita no site Make Sense, com caixas em cada objeto e exportação no formato YOLO (classe 0 = vaca, classe 1 = bicicleta).
+- 80 imagens no total;
+- 40 imagens de vacas;
+- 40 imagens de bicicletas;
+- utilizadas exclusivamente para fins acadêmicos;
+- divisão por classe:
+  - 32 imagens para treino;
+  - 4 para validação;
+  - 4 para teste;
+- total:
+  - 64 imagens de treino;
+  - 8 de validação;
+  - 8 de teste.
 
-### 🧠 Metodologia
+Na Entrega 1, a rotulação foi realizada no **Make Sense AI**, com caixas delimitadoras exportadas no formato YOLO:
 
-Partimos do modelo pré-treinado `yolov5s` (transfer learning) e o treinamos com as nossas imagens no Google Colab, com GPU Tesla T4. Foram feitas duas simulações, com **30** e **60 épocas**, e cada uma foi avaliada na validação e em imagens de teste nunca vistas pelo modelo.
+- classe 0 = vaca;
+- classe 1 = bicicleta.
 
-### 📈 Curvas de treino
+## 🧠 Metodologia
 
-Perdas (box, obj e cls) e métricas (precisão, recall e mAP) ao longo das épocas, medidas na validação.
+### Entrega 1 — YOLOv5 customizada
 
-**30 épocas**
+Foi utilizado o modelo pré-treinado `yolov5s` como base para treinamento com as imagens do projeto.
+
+Foram realizadas duas simulações:
+
+- **30 épocas**;
+- **60 épocas**.
+
+Os modelos foram avaliados utilizando métricas como:
+
+- precisão;
+- recall;
+- mAP50;
+- mAP50-95;
+- perdas de treinamento;
+- tempo de treinamento;
+- análise visual das imagens de teste.
+
+### Entrega 2 — Comparação de abordagens
+
+A segunda etapa utiliza o mesmo dataset para comparar três soluções:
+
+1. **YOLOv5 customizada**, desenvolvida na Entrega 1;
+2. **YOLO padrão**, utilizando o modelo `yolov5s.pt` pré-treinado;
+3. **CNN treinada do zero**, criada especificamente para classificar as imagens entre `vaca` e `bicicleta`.
+
+A comparação considera:
+
+- facilidade de uso e integração;
+- desempenho do modelo;
+- tempo de treinamento ou customização;
+- tempo de inferência;
+- vantagens e limitações de cada abordagem.
+
+É importante destacar que as abordagens executam tarefas diferentes: a YOLO realiza **detecção e localização de objetos**, enquanto a CNN realiza **classificação da imagem inteira**.
+
+## 📈 Curvas de treino — Entrega 1
+
+Perdas de treinamento e métricas de validação ao longo das épocas.
+
+### 30 épocas
 
 <img src="assets/results_30ep.png.png" width="80%">
 
-**60 épocas**
+### 60 épocas
 
 <img src="assets/results_60ep.png.png" width="80%">
 
-### 📊 Resultados no conjunto de teste
+## 📊 Resultados do conjunto de teste — Entrega 1
 
-| | 30 épocas | 60 épocas |
-|---|---|---|
+| Métrica | 30 épocas | 60 épocas |
+|---|---:|---:|
 | Precisão | 0,842 | 0,899 |
 | Recall | 0,964 | 0,713 |
 | mAP50 | 0,995 | 0,912 |
 | mAP50-95 | 0,649 | 0,736 |
 | Tempo de treino | 0,177 h | 0,348 h |
-| Detecções nas 8 imagens (confiança mínima 0,25) | 7 de 8 | 8 de 8, com 1 caixa duplicada |
+| Detecções nas 8 imagens | 7 de 8 | 8 de 8, com 1 caixa duplicada |
 
-### 🔎 Principais achados
+## 🔎 Principais achados
 
-- Os dois modelos aprenderam a distinguir vaca de bicicleta com apenas 64 imagens de treino.
-- **Não houve um vencedor claro:** o modelo de 60 épocas desenhou caixas mais justas nas vacas, mas custou o dobro do tempo de treino e gerou uma caixa duplicada. O de 30 épocas perdeu uma bicicleta com o limiar de 0,25.
-- A bicicleta foi mais difícil de detectar que a vaca (confiança mais baixa nos dois modelos).
-- A validação foi otimista, porque o melhor modelo foi escolhido com base nela. O teste é a medida mais confiável.
+### Entrega 1
+
+- Os dois modelos conseguiram aprender a distinguir vacas de bicicletas utilizando apenas 64 imagens de treinamento.
+- Não houve um vencedor absoluto entre as simulações de 30 e 60 épocas.
+- O modelo de 60 épocas apresentou melhor mAP50-95, mas exigiu maior tempo de treinamento.
+- O modelo de 30 épocas apresentou maior recall no conjunto de teste.
+- A inspeção visual também mostrou diferenças entre as duas simulações.
+- Devido ao pequeno número de imagens de validação e teste, as métricas são sensíveis a poucos erros.
+
+### Entrega 2
+
+A comparação mostrou que cada abordagem possui vantagens diferentes.
+
+- A **YOLO customizada** é a solução mais completa quando é necessário identificar a classe e também localizar o objeto na imagem.
+- A **YOLO padrão** possui grande facilidade de integração por utilizar pesos previamente treinados, sem necessidade de novo treinamento para classes já existentes no COCO.
+- A **CNN treinada do zero** é uma alternativa mais simples quando o objetivo é apenas classificar a imagem.
+
+Na simulação da CNN utilizando o mesmo conjunto de dados, foram obtidos **7 acertos em 8 imagens de teste**, correspondendo a **87,5% de accuracy**.
+
+As métricas de YOLO e CNN não devem ser comparadas diretamente como se fossem equivalentes, pois `mAP` avalia detecção de objetos, enquanto `accuracy` avalia classificação.
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+Dentre os arquivos e pastas presentes na raiz do projeto:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
-
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
-
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
-
-- <b>src</b>: notebook com a solução da Fase 6.
-
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- **.github**: arquivos de configuração do GitHub;
+- **assets**: imagens e outros arquivos utilizados na documentação;
+- **config**: arquivos de configuração do projeto;
+- **document**: documentos relacionados ao desenvolvimento;
+- **scripts**: scripts auxiliares;
+- **src**: notebook principal da Fase 6;
+- **README.md**: documentação introdutória e guia do projeto.
 
 ## 🔧 Como executar o código
 
-**Pré-requisitos:** conta Google (Colab e Drive). Versões usadas: Python 3.13, PyTorch 2.11 e YOLOv5 v7.0.
+### Pré-requisitos
 
-1. Abra o notebook no Colab pelo botão da seção Descrição.
-2. Abra a pasta do Drive, clique com o botão direito em `FarmTech_Fase6`, escolha **Organizar > Adicionar atalho ao Drive** e selecione "Meu Drive".
-3. No Colab, ative a GPU em *Ambiente de execução > Alterar tipo de ambiente de execução > T4*.
-4. Execute as células em ordem. As saídas dos treinos já estão salvas no notebook (cerca de 11 e 21 minutos de treino).
+- Conta Google;
+- Google Colab;
+- acesso ao Google Drive contendo o dataset;
+- ambiente Python com as bibliotecas utilizadas no notebook.
+
+### Execução
+
+1. Abra o notebook pelo botão **Open in Colab** localizado no início deste README.
+2. Acesse a pasta compartilhada do Google Drive.
+3. Adicione `FarmTech_Fase6` como atalho em **Meu Drive**, caso necessário.
+4. No Colab, selecione GPU em:
+   **Ambiente de execução > Alterar tipo de ambiente de execução > T4**, quando disponível.
+5. Execute as células do notebook em ordem.
+
+O dataset é lido a partir do Google Drive. Os novos arquivos temporários de execução são armazenados em `/content/FarmTech_Fase6_Resultados`, evitando dependência de permissão de escrita na pasta compartilhada do Drive.
 
 ## 🎥 Vídeo de demonstração
 
-O vídeo tem até **5 minutos** e demonstra o funcionamento do notebook, do dataset até as conclusões.
+O vídeo possui duração máxima de **5 minutos** e apresenta o funcionamento e os principais resultados do projeto.
 
 **YouTube (não listado):** COLE_AQUI_O_LINK_DO_VIDEO
 
-## 🧪 Limitações atuais
+## 🧪 Limitações
 
-- Dataset pequeno, conforme proposto no enunciado (40 imagens por classe). Com validação e teste de apenas 8 imagens, cada erro pesa muito nas métricas.
-- As fotos de teste são quase todas close-ups ou imagens de produto, sem vacas ao longe, rebanhos ou bicicletas parcialmente visíveis.
-- A confiança das detecções é baixa (entre 0,29 e 0,73), e o resultado depende do limiar de confiança escolhido.
-- A espessura das linhas e o tamanho do texto nas imagens de detecção dependem da resolução original de cada foto, então em algumas bicicletas o rótulo aparece cortado. As caixas e as confianças não são afetadas.
-- Esta entrega cobre o YOLOv5 customizado (Entrega 1). A comparação com o YOLO padrão e com uma CNN treinada do zero (Entrega 2, "Ir Além") fica como trabalho futuro.
+- O dataset possui apenas 40 imagens por classe.
+- Os conjuntos de validação e teste contêm somente 8 imagens cada.
+- Com apenas 8 imagens de teste, um único erro representa uma alteração de 12,5 pontos percentuais em uma métrica de classificação.
+- As imagens não representam todas as possíveis condições reais de uso, como objetos distantes, parcialmente ocultos ou ambientes muito diferentes.
+- A YOLO customizada exige rotulação e treinamento específico.
+- A YOLO padrão não foi ajustada especificamente para o conjunto de imagens deste projeto.
+- A CNN realiza classificação da imagem inteira e não fornece a localização do objeto.
+- Durante a etapa final do desenvolvimento houve indisponibilidade temporária de GPU no Google Colab. Por isso, algumas avaliações da Entrega 2 foram conferidas em execução externa utilizando o mesmo dataset e a mesma divisão de treino, validação e teste.
 
 ## 🗃 Histórico de lançamentos
 
-* 1.0.0 - XX/10/2026
-    * Entrega 1: YOLOv5 customizado, com simulações de 30 e 60 épocas
-      
+### 1.0.0 — Outubro/2026
+- Entrega 1:
+  - YOLOv5 customizada;
+  - treinamentos com 30 e 60 épocas;
+  - validação e teste;
+  - análise comparativa.
+
+### 2.0.0 — Outubro/2026
+- Entrega 2:
+  - YOLO padrão;
+  - CNN treinada do zero;
+  - comparação entre YOLO customizada, YOLO padrão e CNN;
+  - avaliação crítica de vantagens, limitações e desempenho.
+
 ## 📋 Licença
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
 
-
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+<a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por
+<a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a>
+está licenciado sob
+<a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.
+</p>
