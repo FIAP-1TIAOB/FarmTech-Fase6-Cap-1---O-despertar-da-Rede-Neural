@@ -182,7 +182,7 @@ O dataset é lido a partir do Google Drive. Os novos arquivos temporários de ex
 
 O vídeo possui duração máxima de **5 minutos** e apresenta o funcionamento e os principais resultados do projeto.
 
-**YouTube (não listado):** COLE_AQUI_O_LINK_DO_VIDEO
+**YouTube (não listado):** https://youtu.be/HBAGA9SWhhw
 
 ## 🧪 Limitações
 
